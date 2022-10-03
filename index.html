@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <title>تسجيل الطلاب</title>
+    <link rel="stylesheet" href="Css/all.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/edit.css">
+</head>
+
+<body>
+    
+    <div class="container pt-4 bacg text-light px-5">
+
+        <h1 class="text-center">مجموعة الصف الخامس الابتدائي <br> (تكنولوجيا المعلومات ومهارات مهنية)</h1>
+        <form class="fs-5 fw-semibold">
+            <div class="mb-4 mt-4">
+                <label for="studentName">اسم الطالب :</label>
+                <input type="text" class="form-control mt-2" id="studentName">
+            </div>
+            <div class="mb-4">
+                <label for="month">الشهر :</label>
+                <select id="month" class="form-select mt-2">
+                    <option value="January , 1">يناير (1)</option>
+                    <option value="February , 2">فبراير (2)</option>
+                    <option value="March , 3">مارس (3)</option>
+                    <option value="April , 4">ابريل (4)</option>
+                    <option value="May ,5">مايو (5)</option>
+                    <option value="June,6">يونيه (6)</option>
+                    <option value="July,7">يوليو (7)</option>
+                    <option value="August,8">اغسطس (8)</option>
+                    <option value="September,9">سبتمبر (9)</option>
+                    <option value="October,10">اكتوبر (10)</option>
+                    <option value="November,11">نوفمبر (11)</option>
+                    <option value="December,12">ديسمبر (12)</option>
+                </select>
+            </div>
+
+            <button type="button" id="btn-add" class="btn btn-info me-1" onclick="addStudent()">اضافة الطالب</button>
+            <button type="button" id="btn-edit" style="display:none;" onclick="editStudent()" class="btn btn-info">تعديل
+                الطالب</button>
+            <button type="button" class="btn btn-danger marg" onclick="clearForm()">مسح التسجيل</button>
+        </form>
+
+        <input type="text" onkeyup="SearchStudent()" id="searchInput" placeholder="البحث عن الطالب...."
+            class="form-control w-75 mx-auto mt-5 mb-3">
+
+
+        <table class="table mt-4 bg-dark border-5  bg-opacity-75 text-center text-light fs-5 fw-semibold">
+            <thead>
+                <tr>
+                    <td class="px-5">الاسم</td>
+                    <td>(1)</td>
+                    <td>(2)</td>
+                    <td>(3)</td>
+                    <td>(4)</td>
+                    <td>(5)</td>
+                    <td>(6)</td>
+                    <td>(7)</td>
+                    <td>(8)</td>
+                    <td>(9)</td>
+                    <td>(10)</td>
+                    <td>(11)</td>
+                    <td>(12)</td>
+                    <td>التعديل</td>
+                    <td>الحذف</td>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+
+
+
+
+
+            </tbody>
+        </table>
+
+
+
+
+</div>
+
+
+
+
+
+    <script src="Js/index.js"></script>
+</body>
+
+</html>

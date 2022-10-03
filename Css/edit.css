@@ -1,0 +1,25 @@
+html {
+    direction: rtl;
+    
+}
+
+body {
+    background-image   : url(../images/pexels-mark-cruzat-3494806.jpg);
+    background-position: center;
+    background-size    : cover;
+    background-attachment: fixed;
+  
+}
+.bacg{
+    background-color: rgba(0, 0, 0, .3);    
+}
+
+@media only screen and (max-width : 768px) {
+    h1 {
+        font-size: 19px;
+    }
+
+    .marg{
+        margin-right: 2px ;
+    }
+}
